@@ -12,7 +12,7 @@ pipeline {
         }
         stage("Checkout from SCM") {
                steps {
-                    git branch: 'main', credntialsId: 'github', url: ''
+                    git branch: 'main', credntialsId: 'github', url: 'https://github.com/deepimohanbabu/register.git'
                 }
         }
 
