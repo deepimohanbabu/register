@@ -1,8 +1,8 @@
 pipeline {
     agent { label 'Jenkins-agent' }
     tools {
-        jdk 'java 17'
-        maven 'maven 3'
+        jdk 'Java 17'
+        maven 'Maven 3'
     }
     stages { 
         stage("Cleanup workspace") {
@@ -12,7 +12,7 @@ pipeline {
         }
         stage("Checkout from SCM") {
                steps {
-                    git branch: 'main', credntialsId: 'github', url: 'https://github.com/deepimohanbabu/register.git'
+                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/deepimohanbabu/register.git'
                 }
         }
 
